@@ -1,0 +1,8 @@
+{
+  "name": "Wind AI — 课程知识库问答",
+  "slug": "wind-ai",
+  "version": "1.0.0",
+  "description": "连接 Wind AI 智能体平台的课程问答 Skill。调用黄颖老师维护的课程知识库，基于真实课程内容回答学员问题，支持多轮对话。学员安装后直接可用，无需自己配置知识库。",
+  "author": "huangluckybao-lab",
+  "tags": ["course", "qa", "wind-ai", "rag", "chinese"]
+}
