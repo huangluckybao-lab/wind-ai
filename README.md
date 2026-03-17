@@ -4,8 +4,30 @@
 
 ## 一键安装
 
+### 方案 A（推荐）：ClawHub
+
 ```bash
 clawhub install huangluckybao-lab/wind-ai
+```
+
+### 方案 B（无 Node / 无 Homebrew）
+
+**macOS / Linux：**
+
+```bash
+curl -sL https://raw.githubusercontent.com/huangluckybao-lab/wind-ai/master/install.sh | bash
+```
+
+**Windows（PowerShell）：**
+
+```powershell
+irm https://raw.githubusercontent.com/huangluckybao-lab/wind-ai/master/install.ps1 | iex
+```
+
+安装完成后执行：
+
+```bash
+openclaw gateway restart
 ```
 
 或手动安装：将本文件夹放入 OpenClaw `skills/` 目录，重启 Agent 即可。
