@@ -24,24 +24,20 @@ curl -sL https://raw.githubusercontent.com/huangluckybao-lab/wind-ai/master/inst
 irm https://raw.githubusercontent.com/huangluckybao-lab/wind-ai/master/install.ps1 | iex
 ```
 
-安装完成后执行：
+安装完成后重启你的 AI 助手平台即可生效。
 
-```bash
-openclaw gateway restart
-```
-
-或手动安装：将本文件夹放入 OpenClaw `skills/` 目录，重启 Agent 即可。
+或手动安装：将本文件夹放入你的 AI 助手平台的 `skills/` 目录，重启平台即可。
 
 ## 功能
 
 - 📚 基于黄颖老师维护的课程知识库回答问题
 - 🔄 支持多轮连续对话（会话记忆）
 - 🚫 只说知识库内容，不乱编答案
-- ✅ 兼容 OpenClaw / SkillsMP 标准 SKILL.md 格式
+- ✅ 兼容标准 SKILL.md 格式，适配多个主流 AI 助手平台
 
 ## 使用方式
 
-安装后，直接在 Agent 中提问课程相关内容，例如：
+安装后，直接在 AI 助手中提问课程相关内容，例如：
 
 > "AI Agent 的三层结构是什么？"
 > "帮我出一道关于 MCP 协议的选择题"
@@ -55,6 +51,7 @@ openclaw gateway restart
 | LobsterAI | ✅ |
 | ArkClaw | ✅ |
 | KimiClaw | ✅ |
+| 其他支持 SKILL.md 的平台 | ✅ |
 
 ## 维护
 
