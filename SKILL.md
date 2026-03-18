@@ -7,10 +7,35 @@
 
 ## 执行方式
 
-使用 `exec` 工具运行以下命令（路径相对于本 Skill 目录）：
+根据当前平台环境，按优先级选择以下任一方式调用：
+
+### 方式 1：Node.js（推荐，WorkBuddy / 大多数 AI 助手平台内置）
+
+```bash
+node <SKILL_DIR>/call_wind.js "用户的问题" [conversation_id]
+```
+
+### 方式 2：Python（备用，需系统已安装 Python 3）
 
 ```bash
 python3 <SKILL_DIR>/call_wind.py "用户的问题" [conversation_id]
+```
+
+Windows：
+```bash
+python <SKILL_DIR>/call_wind.py "用户的问题" [conversation_id]
+```
+
+### 方式 3：Shell 脚本（macOS / Linux，需 curl）
+
+```bash
+bash <SKILL_DIR>/call_wind.sh "用户的问题" [conversation_id]
+```
+
+### 方式 4：批处理脚本（Windows，需 curl，Windows 10 1803+ 自带）
+
+```bat
+<SKILL_DIR>/call_wind.bat "用户的问题" [conversation_id]
 ```
 
 - `<SKILL_DIR>` = 本文件所在目录的绝对路径
@@ -18,7 +43,7 @@ python3 <SKILL_DIR>/call_wind.py "用户的问题" [conversation_id]
 
 ## 响应处理
 
-脚本输出 JSON：
+所有方式均输出相同格式的 JSON：
 ```json
 {
   "answer": "AI 的回答内容",
